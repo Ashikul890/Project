@@ -1,0 +1,38 @@
+
+#screenshot-part .screen-item ul li {
+   display: inline-block;
+    margin: 55px 10px 0 0;
+}
+#screenshot-part .screen-item ul li button {
+   font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #353535;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: .4s;
+}
+
+#screenshot-part .screen-item ul li button::after{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background:#744fa0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    
+} 
+#screenshot-part .screen-item .slick-active button::after{
+    opacity: 1;
+}
+#screenshot-part .screen-item .slick-active ul li button {
+    border-color:  #744fa0;
+}
+font-family: 'Open Sans', sans-serif
+
+font-family: 'Raleway', sans-serif;
